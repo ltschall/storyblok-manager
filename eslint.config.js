@@ -49,6 +49,6 @@ export default ts.config(
     },
   },
   {
-    ignores: ["dist", "coverage"],
+    ignores: ["dist", "coverage", "pnpm-lock.yaml"],
   },
 )

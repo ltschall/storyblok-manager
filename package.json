@@ -16,10 +16,10 @@
     "dev": "tsx watch --env-file=.env --inspect src/index.ts",
     "test": "vitest",
     "test:coverage": "vitest run --coverage",
-    "lint": "eslint . && prettier . --check",
-    "lint:fix": "eslint --fix . && prettier . --write",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
     "typecheck": "tsc --noEmit",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "devDependencies": {
     "@eslint-community/eslint-plugin-eslint-comments": "^4.3.0",
@@ -32,7 +32,6 @@
     "eslint-plugin-vitest": "^0.5.4",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
-    "prettier": "3.2.5",
     "shx": "^0.3.4",
     "storyblok-js-client": "^6.7.3",
     "tsx": "^4.10.5",
@@ -41,6 +40,6 @@
     "vitest": "^1.2.2"
   },
   "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
+    "**/*": "eslint"
   }
 }
