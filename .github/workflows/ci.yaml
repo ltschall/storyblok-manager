@@ -15,6 +15,11 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
+      - name: Set Up PNPM
+        uses: pnpm/action-setup@v2
+        with:
+          version: 9
+
       - name: Set Up Node.js
         uses: actions/setup-node@v4
         with:
@@ -38,6 +43,11 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
+      - name: Set Up PNPM
+        uses: pnpm/action-setup@v2
+        with:
+          version: 9
+
       - name: Set Up Node.js
         uses: actions/setup-node@v4
         with:
@@ -46,6 +56,9 @@ jobs:
 
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
+
+      - name: Copy .env files
+        run: cp .env.example .env
 
       - name: Run tests coverage
         run: pnpm run test:coverage
