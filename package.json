@@ -1,0 +1,46 @@
+{
+  "name": "storyblok-manager",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "dist/index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": "^20.12.0"
+  },
+  "scripts": {
+    "start": "node .",
+    "build": "shx rm -rf dist && tsc --project tsconfig.build.json",
+    "dev": "tsx watch --env-file=.env --inspect src/index.ts",
+    "test": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint . && prettier . --check",
+    "lint:fix": "eslint --fix . && prettier . --write",
+    "typecheck": "tsc --noEmit",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@eslint-community/eslint-plugin-eslint-comments": "^4.3.0",
+    "@eslint/js": "^8.57.0",
+    "@types/node": "^20.12.12",
+    "@vitest/coverage-v8": "^1.6.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-n": "^17.7.0",
+    "eslint-plugin-unicorn": "^53.0.0",
+    "eslint-plugin-vitest": "^0.5.4",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "prettier": "3.2.5",
+    "shx": "^0.3.4",
+    "storyblok-js-client": "^6.7.3",
+    "tsx": "^4.10.5",
+    "typescript": "^5.4.5",
+    "typescript-eslint": "^7.10.0",
+    "vitest": "^1.2.2"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  }
+}
