@@ -1,3 +1,3 @@
-import { loadEnvFile } from "node:process";
+import { loadEnvFile } from "node:process"
 
-loadEnvFile();
+loadEnvFile()

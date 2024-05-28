@@ -1,3 +1,3 @@
-import { env } from "node:process";
+import { env } from "node:process"
 
-export const hello = () => env["HELLO_WORLD"];
+export const hello = () => env["HELLO_WORLD"]
