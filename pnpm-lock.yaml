@@ -42,8 +42,8 @@ importers:
         specifier: ^0.3.4
         version: 0.3.4
       storyblok-js-client:
-        specifier: ^6.7.3
-        version: 6.7.3
+        specifier: ^6.9.1
+        version: 6.9.1
       tsx:
         specifier: ^4.10.5
         version: 4.11.0
@@ -1382,8 +1382,8 @@ packages:
   std-env@3.7.0:
     resolution: {integrity: sha512-JPbdCEQLj1w5GilpiHAx3qJvFndqybBysA3qUOnznweH4QbNYUsW/ea8QzSrnh0vNsezMMw5bcVool8lM0gwzg==}
 
-  storyblok-js-client@6.7.3:
-    resolution: {integrity: sha512-fBBxtyju6xtFYgAgoWBaU7WagB8M6wN+N+A3UAhZtAPW8yZmlbr3nZu26ErYIbSLaeueyFlcNrI4Kag+Kszsdw==}
+  storyblok-js-client@6.9.1:
+    resolution: {integrity: sha512-mXCSNIr7tvFzH+TibM7hbq+xNAeDWnrfQwh8HS4fLskVHwQ2HaCQG9BkdbT1zWUFav3HWB+B8kqi3+KjRG1CUg==}
 
   string-argv@0.3.2:
     resolution: {integrity: sha512-aqD2Q0144Z+/RqG52NeHEkZauTAUWJO8c6yTftGJKO3Tja5tUgIfmIl6kExvhtxSDP7fXB6DvzkfMpCd/F3G+Q==}
@@ -2927,7 +2927,7 @@ snapshots:
 
   std-env@3.7.0: {}
 
-  storyblok-js-client@6.7.3: {}
+  storyblok-js-client@6.9.1: {}
 
   string-argv@0.3.2: {}
 
